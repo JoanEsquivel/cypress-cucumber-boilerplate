@@ -4,7 +4,7 @@ import {
   And,
   Then,
 } from "@badeball/cypress-cucumber-preprocessor";
-const loginPage = require("../pages/LoginPage");
+const loginPage = require("../../pages/LoginPage");
 
 Given("A user opens a saucelabs website", () => {
   cy.visit("/");

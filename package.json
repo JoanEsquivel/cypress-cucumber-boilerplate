@@ -16,10 +16,5 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
     "cypress": "^10.3.0",
     "esbuild": "^0.14.48"
-  },
-  "cypress-cucumber-preprocessor": {
-    "json": {
-      "enabled": true
-    }
   }
 }
