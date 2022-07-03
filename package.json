@@ -1,0 +1,25 @@
+{
+  "name": "cypress-cucumber-boilerplate",
+  "version": "1.0.0",
+  "description": "This project is meant to be a kind of template to start working with Cucumber and Cypress just cloning the project.",
+  "main": "index.js",
+  "scripts": {
+    "cypress:runner": "cypress open"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "cucumber",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^11.3.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
+    "cypress": "^10.3.0",
+    "esbuild": "^0.14.48"
+  },
+  "cypress-cucumber-preprocessor": {
+    "json": {
+      "enabled": true
+    }
+  }
+}
