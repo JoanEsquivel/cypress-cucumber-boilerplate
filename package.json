@@ -4,7 +4,8 @@
   "description": "This project is meant to be a kind of template to start working with Cucumber and Cypress just cloning the project.",
   "main": "index.js",
   "scripts": {
-    "cypress:runner": "cypress open"
+    "cypress:runner": "cypress open",
+    "cypress:execution": "cypress run"
   },
   "keywords": [
     "cypress"

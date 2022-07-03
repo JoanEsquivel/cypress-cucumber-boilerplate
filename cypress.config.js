@@ -5,20 +5,30 @@ const addCucumberPreprocessorPlugin =
 const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 
-async function setupNodeEvents(on, config) {
-  await addCucumberPreprocessorPlugin(on, config);
-  on(
-    "file:preprocessor",
-    createBundler({
-      plugins: [createEsbuildPlugin(config)],
-    })
-  );
-  return config;
-}
+//If using this approach, just call the key "setupNodeEvents" in the E2E configurations
+// async function setupNodeEvents(on, config) {
+//   await addCucumberPreprocessorPlugin(on, config);
+//   on(
+//     "file:preprocessor",
+//     createBundler({
+//       plugins: [createEsbuildPlugin(config)],
+//     })
+//   );
+//   return config;
+// }
 
 module.exports = defineConfig({
   e2e: {
-    setupNodeEvents,
+    async setupNodeEvents(on, config) {
+      const bundler = createBundler({
+        plugins: [createEsbuildPlugin(config)],
+      });
+
+      on("file:preprocessor", bundler);
+      await addCucumberPreprocessorPlugin(on, config);
+
+      return config;
+    },
     specPattern: "cypress/e2e/features/*.feature",
     baseUrl: "https://www.saucedemo.com",
     chromeWebSecurity: false,
