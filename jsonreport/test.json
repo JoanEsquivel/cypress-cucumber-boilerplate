@@ -1,0 +1,332 @@
+[
+  {
+    "description": "    Feature Login page will work depending on the user credentials.",
+    "elements": [
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user opens a saucelabs website",
+            "result": {
+              "duration": 1854000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "login-page;success-login",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Success Login",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 8,
+            "name": "A user enters the username \"standard_user\"",
+            "result": {
+              "duration": 362000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 9,
+            "name": "A user enters the password \"secret_sauce\"",
+            "result": {
+              "duration": 315000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 10,
+            "name": "A user clicks on the login button",
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the url will contains the inventory subdirectory",
+            "result": {
+              "duration": 19000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user opens a saucelabs website",
+            "result": {
+              "duration": 468000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "login-page;blocked-login",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Blocked Login",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 13,
+            "name": "A user enters the username \"locked_out_user\"",
+            "result": {
+              "duration": 329000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 14,
+            "name": "A user enters the password \"secret_sauce\"",
+            "result": {
+              "duration": 286000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "And ",
+            "line": 15,
+            "name": "A user clicks on the login button",
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 16,
+            "name": "The error message \"Epic sadface: Sorry, this user has been locked out.\" is displayed",
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user opens a saucelabs website",
+            "result": {
+              "duration": 349000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "login-page;incorrect-username-login",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Incorrect Username Login",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 18,
+            "name": "A user provides incorrect credentials",
+            "result": {
+              "duration": 534000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "testName",
+                  "secret_sauce"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 21,
+            "name": "A user clicks on the login button",
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 22,
+            "name": "The error message \"Epic sadface: Username and password do not match any user in this service\" is displayed",
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "keyword": "Background",
+        "line": 5,
+        "name": "",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "line": 6,
+            "name": "A user opens a saucelabs website",
+            "result": {
+              "duration": 181000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "background"
+      },
+      {
+        "description": "",
+        "id": "login-page;incorrect-password-login",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Incorrect Password Login",
+        "steps": [
+          {
+            "keyword": "When ",
+            "line": 24,
+            "name": "A user provides incorrect credentials",
+            "result": {
+              "duration": 586000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "standard_user",
+                  "testPassword"
+                ]
+              }
+            ]
+          },
+          {
+            "keyword": "And ",
+            "line": 27,
+            "name": "A user clicks on the login button",
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "line": 28,
+            "name": "The error message \"Epic sadface: Username and password do not match any user in this service\" is displayed",
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "not available:0"
+            }
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login-page",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Login page",
+    "uri": "cypress\\e2e\\features\\login.feature"
+  }
+]
