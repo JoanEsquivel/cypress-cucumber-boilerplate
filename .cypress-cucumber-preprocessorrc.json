@@ -1,12 +1,12 @@
 {
     "json": {
       "enabled": true,
-      "output": "jsonreport/test.json",
+      "output": "jsonlogs/log.json",
       "formater": "cucumber-json-formatter.exe"
     },
     "messages": {
       "enabled": true,
-      "output": "jsonreport/messages.ndjson"
+      "output": "jsonlogs/messages.ndjson"
     },
     "stepDefinitions": [
         "[filepath]/**/*.{js,ts}",
