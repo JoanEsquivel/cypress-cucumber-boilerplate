@@ -8,6 +8,9 @@
       "enabled": true,
       "output": "jsonlogs/messages.ndjson"
     },
+    "html": {
+      "enabled": true
+    },
     "stepDefinitions": [
         "[filepath]/**/*.{js,ts}",
         "[filepath].{js,ts}",

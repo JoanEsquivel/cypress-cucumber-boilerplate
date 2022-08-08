@@ -13,7 +13,7 @@
             "line": 6,
             "name": "A user opens a saucelabs website",
             "result": {
-              "duration": 1815000000,
+              "duration": 1375000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
             "line": 8,
             "name": "A user enters the username \"standard_user\"",
             "result": {
-              "duration": 350000000,
+              "duration": 334000000,
               "status": "passed"
             },
             "match": {
@@ -47,7 +47,7 @@
             "line": 9,
             "name": "A user enters the password \"secret_sauce\"",
             "result": {
-              "duration": 318000000,
+              "duration": 295000000,
               "status": "passed"
             },
             "match": {
@@ -59,7 +59,7 @@
             "line": 10,
             "name": "A user clicks on the login button",
             "result": {
-              "duration": 133000000,
+              "duration": 109000000,
               "status": "passed"
             },
             "match": {
@@ -92,7 +92,7 @@
             "line": 6,
             "name": "A user opens a saucelabs website",
             "result": {
-              "duration": 504000000,
+              "duration": 468000000,
               "status": "passed"
             },
             "match": {
@@ -114,7 +114,7 @@
             "line": 13,
             "name": "A user enters the username \"locked_out_user\"",
             "result": {
-              "duration": 332000000,
+              "duration": 343000000,
               "status": "passed"
             },
             "match": {
@@ -126,7 +126,7 @@
             "line": 14,
             "name": "A user enters the password \"secret_sauce\"",
             "result": {
-              "duration": 298000000,
+              "duration": 291000000,
               "status": "passed"
             },
             "match": {
@@ -150,7 +150,7 @@
             "line": 16,
             "name": "The error message \"Epic sadface: Sorry, this user has been locked out.\" is displayed",
             "result": {
-              "duration": 14000000,
+              "duration": 11000000,
               "status": "passed"
             },
             "match": {
@@ -171,7 +171,7 @@
             "line": 6,
             "name": "A user opens a saucelabs website",
             "result": {
-              "duration": 647000000,
+              "duration": 103000000,
               "status": "passed"
             },
             "match": {
@@ -193,7 +193,7 @@
             "line": 18,
             "name": "A user provides incorrect credentials",
             "result": {
-              "duration": 544000000,
+              "duration": 527000000,
               "status": "passed"
             },
             "match": {
@@ -252,7 +252,7 @@
             "line": 6,
             "name": "A user opens a saucelabs website",
             "result": {
-              "duration": 182000000,
+              "duration": 120000000,
               "status": "passed"
             },
             "match": {
@@ -274,7 +274,7 @@
             "line": 24,
             "name": "A user provides incorrect credentials",
             "result": {
-              "duration": 599000000,
+              "duration": 592000000,
               "status": "passed"
             },
             "match": {
@@ -300,7 +300,7 @@
             "line": 27,
             "name": "A user clicks on the login button",
             "result": {
-              "duration": 88000000,
+              "duration": 83000000,
               "status": "passed"
             },
             "match": {
