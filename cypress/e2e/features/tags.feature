@@ -1,18 +1,14 @@
 Feature: Login page with Tags
 
-    Feature Login page will work depending on the user credentials.
+    Feature Login page will work depending on the user credentials with Tags
 
     Background:
-        Given A user opens a saucelabs website
+        Given A web browser is at the saucelabs login page - tag demo
     @mobile
     Scenario: Success Login
-        When A user enters the username "standard_user"
-        And A user enters the password "secret_sauce"
-        And A user clicks on the login button
-        Then the url will contains the inventory subdirectory
+        When A user enters the username "standard_user", the password "secret_sauce", and clicks on the login button - tag demo
+        Then the url will contains the inventory subdirectory - tag demo
     @desktop
     Scenario: Blocked Login
-        When A user enters the username "locked_out_user"
-        And A user enters the password "secret_sauce"
-        And A user clicks on the login button
-        Then The error message "Epic sadface: Sorry, this user has been locked out." is displayed
+        When A user enters the username "locked_out_user", the password "secret_sauce", and clicks on the login button - tag demo
+        Then The error message "Epic sadface: Sorry, this user has been locked out." is displayed - tag demo

@@ -5,15 +5,15 @@ import {
 } from "@badeball/cypress-cucumber-preprocessor";
 const loginPage = require("../../pages/LoginPage");
 
-Given("A web browser is at the saucelabs login page", () => {
+Given("A web browser is at the saucelabs login page - tag demo", () => {
   cy.visit("/");
 });
 
-When("A user enters the username {string}, the password {string}, and clicks on the login button", (username,password) => {
+When("A user enters the username {string}, the password {string}, and clicks on the login button - tag demo", (username,password) => {
   loginPage.submitLogin(username,password)
 });
 
-When("A user provides incorrect credentials, and clicks on the login button", (table) => {
+When("A user provides incorrect credentials, and clicks on the login button - tag demo", (table) => {
   table.hashes().forEach((row) => {
     cy.log(row.username);
     cy.log(row.password);
@@ -21,9 +21,9 @@ When("A user provides incorrect credentials, and clicks on the login button", (t
 
   });
 });
-Then("the url will contains the inventory subdirectory", () => {
+Then("the url will contains the inventory subdirectory - tag demo", () => {
   cy.url().should("contains", "/inventory.html");
 });
-Then("The error message {string} is displayed", (errorMessage) => {
+Then("The error message {string} is displayed - tag demo", (errorMessage) => {
   loginPage.elements.errorMessage().should("have.text", errorMessage);
 });
