@@ -17,6 +17,12 @@ class homeSaucePage {
   clickLogin() {
     this.elements.loginBtn().click();
   }
+
+  submitLogin(username,password){
+    this.elements.usernameInput().type(username);
+    this.elements.passwordInput().type(password);
+    this.elements.loginBtn().click();
+  }
 }
 
 module.exports = new homeSaucePage();
