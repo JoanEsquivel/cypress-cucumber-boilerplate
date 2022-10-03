@@ -16,10 +16,10 @@
   "author": "cucumber",
   "license": "ISC",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^13.0.1",
-    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.4",
-    "cypress": "^10.8.0",
-    "esbuild": "^0.15.8",
-    "multiple-cucumber-html-reporter": "^2.0.0"
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.9.0",
+    "esbuild": "^0.15.10",
+    "multiple-cucumber-html-reporter": "^3.0.1"
   }
 }
