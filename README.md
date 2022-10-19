@@ -33,3 +33,7 @@ Install project dependencies with: npm i
 ## 🚀 Run the demo:
 
 Open the terminal and run: npm run cypress:execution
+
+## 🚀 Allure Report using GH Actions
+
+https://joanesquivel.github.io/cypress-cucumber-boilerplate
