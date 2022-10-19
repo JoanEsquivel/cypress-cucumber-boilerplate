@@ -13,7 +13,7 @@ jobs:
       - name: Cypress run with Cucumber
         uses: cypress-io/github-action@v4.2.0 # use the explicit version number
         with:
-          command: cypress:execution-allure
+          command: npm run cypress:execution-allure
       - name: Generate Allure Report
         uses: simple-elf/allure-report-action@master
         if: always()
