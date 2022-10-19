@@ -1,6 +1,6 @@
 {
   "name": "cypress-cucumber-boilerplate",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "This project is meant to be a kind of template to start working with Cucumber and Cypress just cloning the project.",
   "main": "index.js",
   "scripts": {
@@ -18,8 +18,8 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "cypress": "^10.9.0",
-    "esbuild": "^0.15.10",
+    "cypress": "^10.10.0",
+    "esbuild": "^0.15.11",
     "multiple-cucumber-html-reporter": "^3.0.1"
   }
 }
