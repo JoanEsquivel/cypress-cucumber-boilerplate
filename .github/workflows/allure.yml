@@ -1,4 +1,4 @@
-name: Cypress Tests
+name: Allure Integration
 
 on: [push]
 
