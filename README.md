@@ -37,3 +37,7 @@ Open the terminal and run: npm run cypress:execution
 ## 🚀 Allure Report using GH Actions
 
 https://joanesquivel.github.io/cypress-cucumber-boilerplate
+
+Note: If you want to create an artifact instead of publish it in GH Actions, you can follow the next example:
+
+https://github.com/SeyiOG/newCyLearn2/blob/main/.github/workflows/cypress-allure-report.yml
