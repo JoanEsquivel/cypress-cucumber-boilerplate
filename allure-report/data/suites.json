@@ -1,0 +1,115 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Login page",
+    "children" : [ {
+      "name" : "Success Login",
+      "uid" : "8cc304b01f16daf0",
+      "parentUid" : "c2d57503ceff46fd1c9bad0fe50e2008",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666141822694,
+        "stop" : 1666141828260,
+        "duration" : 5566
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Blocked Login",
+      "uid" : "d991bc278065b016",
+      "parentUid" : "c2d57503ceff46fd1c9bad0fe50e2008",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666141828293,
+        "stop" : 1666141829733,
+        "duration" : 1440
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Incorrect Username Login",
+      "uid" : "1b6a6c568680dc21",
+      "parentUid" : "c2d57503ceff46fd1c9bad0fe50e2008",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666141829741,
+        "stop" : 1666141830985,
+        "duration" : 1244
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Incorrect Password Login",
+      "uid" : "81e16b0a125f0eb6",
+      "parentUid" : "c2d57503ceff46fd1c9bad0fe50e2008",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666141830992,
+        "stop" : 1666141832000,
+        "duration" : 1008
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "c2d57503ceff46fd1c9bad0fe50e2008"
+  }, {
+    "name" : "Login page with Tags",
+    "children" : [ {
+      "name" : "Success Login",
+      "uid" : "1ae32ad405674693",
+      "parentUid" : "314744b8cc454f375fb4744a6b9d037d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666141835604,
+        "stop" : 1666141836815,
+        "duration" : 1211
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Blocked Login",
+      "uid" : "60fe41f80107905e",
+      "parentUid" : "314744b8cc454f375fb4744a6b9d037d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1666141836828,
+        "stop" : 1666141837982,
+        "duration" : 1154
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "newPassed" : false,
+      "newBroken" : false,
+      "retriesCount" : 0,
+      "retriesStatusChange" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "314744b8cc454f375fb4744a6b9d037d"
+  } ]
+}
