@@ -4,6 +4,7 @@ const addCucumberPreprocessorPlugin =
   require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
 const createEsbuildPlugin =
   require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
+const allureWriter = require("@shelex/cypress-allure-plugin/writer");
 
 //If using this approach, just call the key "setupNodeEvents" in the E2E configurations
 // async function setupNodeEvents(on, config) {
@@ -26,6 +27,7 @@ module.exports = defineConfig({
 
       on("file:preprocessor", bundler);
       await addCucumberPreprocessorPlugin(on, config);
+      allureWriter(on, config);
 
       return config;
     },
