@@ -12,6 +12,7 @@ Integrated with:
 - [x] https://github.com/bahmutov/cypress-esbuild-preprocessor
 - [x] https://www.npmjs.com/package/multiple-cucumber-html-reporter
 - [x] https://github.com/cucumber/json-formatter
+- [x] Allure Reporter
 
 (+ bundlers: https://github.com/badeball/cypress-cucumber-preprocessor/tree/master/examples)
 
@@ -29,5 +30,10 @@ https://github.com/cucumber/json-formatter
 
 Install project dependencies with: npm i
 
-## 🚀 Run the demo: 
+## 🚀 Run the demo:
+
 Open the terminal and run: npm run cypress:execution
+
+## 🚀 Allure Report using GH Actions
+
+https://joanesquivel.github.io/cypress-cucumber-boilerplate

@@ -6,9 +6,11 @@
   "scripts": {
     "cypress:runner": "cypress open",
     "cypress:execution": "cypress run",
-    "cypress:execution-tags": "cypress run --env tags=@mobile"
-
-    
+    "cypress:execution-tags": "cypress run --env tags=@mobile",
+    "cypress:execution-allure": "cypress run --env allure=true",
+    "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
+    "allure:report": "allure generate allure-results --clean -o allure-report",
+    "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true"
   },
   "keywords": [
     "cypress"
@@ -18,6 +20,7 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@shelex/cypress-allure-plugin": "^2.33.1",
     "cypress": "^10.10.0",
     "esbuild": "^0.15.11",
     "multiple-cucumber-html-reporter": "^3.0.1"
