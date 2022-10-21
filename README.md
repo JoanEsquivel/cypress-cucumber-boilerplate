@@ -18,26 +18,25 @@ Integrated with:
 
 - ## 💻 Pre-requisites
 
-Before you use this project you only need to have Node Js installed in your computer.
-
-https://nodejs.org/es/download/
-
-Also, download and install the JSON fomatter depending on your OS
-
-https://github.com/cucumber/json-formatter
+1. Node JS
+2. Optional: Java 8 for Allure Reporter
+3. Optional: Json-formatter for Native Reporter option(depends on your OS: https://github.com/cucumber/json-formatter)
 
 ## 🚀 Install the project
 
 Install project dependencies with: npm i
 
-## 🚀 Run the demo:
+## Run the demo:
 
-Open the terminal and run: npm run cypress:execution
+1. Standard Execution: npm run cypress:execution
+2. Native report(with JSON FORMATTER): Check how to do it in this video: [Cucumber BDD Report - YouTube](https://www.youtube.com/watch?v=5AGXK9cL2fs&t=2s&ab_channel=JoanMedia)
+3. Allure Report: 
+   1. npm run cypress:execution-allure
+   2. npm run allure:report
+   3. allure open
+   4. You'll get a report like this one: GitHub Page - Allure Report Sample: https://joanesquivel.github.io/cypress-cucumber-boilerplate/
 
-## 🚀 Allure Report using GH Actions
 
-https://joanesquivel.github.io/cypress-cucumber-boilerplate
-
-Note: If you want to create an artifact instead of publish it in GH Actions, you can follow the next example:
+##  Sample repo to generate an allure report as an artifact using GH Actions
 
 * https://github.com/SeyiOG/newCyLearn2/blob/main/.github/workflows/cypress-allure-report.yml
