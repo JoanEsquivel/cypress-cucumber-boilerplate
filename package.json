@@ -18,11 +18,11 @@
   "author": "cucumber",
   "license": "ISC",
   "devDependencies": {
-    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@badeball/cypress-cucumber-preprocessor": "^14.0.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "@shelex/cypress-allure-plugin": "^2.33.1",
-    "cypress": "^10.10.0",
-    "esbuild": "^0.15.11",
+    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "cypress": "^11.0.1",
+    "esbuild": "^0.15.13",
     "multiple-cucumber-html-reporter": "^3.0.1"
   }
 }
