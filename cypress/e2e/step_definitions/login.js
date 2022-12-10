@@ -3,7 +3,6 @@ import {
   When,
   Then,
 } from "@badeball/cypress-cucumber-preprocessor";
-// const loginPage = require("../../pages/LoginPage");
 import {loginPage} from '@pages/LoginPage'
 
 Given("A web browser is at the saucelabs login page", () => {
