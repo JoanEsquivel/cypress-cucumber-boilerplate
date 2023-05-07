@@ -1,0 +1,41 @@
+# This is a basic workflow to help you get started with Actions
+
+name: allureReporting
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  cypress-allure-reporting:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: checkout code from Repo
+        uses: actions/checkout@v3
+      - name: Cypress.io
+        # You may pin to the exact commit or the version.
+        # uses: cypress-io/github-action@30008f1458a5a2c97054bfe118fe33d75976c482
+        uses: cypress-io/github-action@v4.2.0
+        with:
+          browser: chrome
+          # Command that overrides cypress run
+          install-command: npm ci
+    
+      - name: install allure
+        run: npm install -g allure-commandline --save-dev && npm i -D @shelex/cypress-allure-plugin
+      - name: generate report
+        run: npm run test
+      - name: upload report
+        uses: actions/upload-artifact@v2
+        with:
+          name: cucumber-allure-report
+          path: /home/runner/work/newCyLearn2/newCyLearn2/allure-report

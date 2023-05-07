@@ -2,10 +2,11 @@ import {
   Given,
   When,
   Then,
+  And,should,
 } from "@badeball/cypress-cucumber-preprocessor";
 import {loginPage} from '@pages/LoginPage'
 
-Given("A web browser is at the saucelabs login page", () => {
+Given("A web browser is at the CTP login page", () => {
   cy.visit("/");
 });
 
@@ -22,9 +23,15 @@ When("A user provides incorrect credentials, and clicks on the login button", (t
 
   });
 });
-Then("the url will contains the inventory subdirectory", () => {
-  cy.url().should("contains", "/inventory.html");
+
+Then("Verify the Title of the Page as {string}", (string) => {
+  cy.title().should("eq", "Dashboard - ClickToPay");
 });
+
+Then("Verify the url of the page as {string}", (string) => {
+  cy.url().should('include',"aps-clicktopay.uat.repay.net");
+});
+
 Then("The error message {string} is displayed", (errorMessage) => {
   loginPage.elements.errorMessage().should("have.text", errorMessage);
 });

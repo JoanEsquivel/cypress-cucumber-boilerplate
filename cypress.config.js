@@ -20,11 +20,13 @@ async function setupNodeEvents(on, config) {
   return config;
 }
 
+
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents,
     specPattern: "cypress/e2e/features/*.feature",
-    baseUrl: "https://www.saucedemo.com",
+    // baseUrl: "https://www.saucedemo.com",
+    baseUrl: "https://aps-clicktopay.uat.repay.net/Account/Login?ReturnUrl=%2F",
     chromeWebSecurity: false,
     env: {
       allureReuseAfterSpec: true,

@@ -4,13 +4,18 @@
   "description": "This project is meant to be a kind of template to start working with Cucumber and Cypress just cloning the project.",
   "main": "index.js",
   "scripts": {
+    "test": "echo\"Error: no test specified\" && exit 1",
     "cypress:runner": "cypress open --e2e --browser chrome",
     "cypress:execution": "cypress run --spec cypress/e2e/features/*",
+    "full-regression-headed-edge": "cypress run --headed --browser edge --spec 'cypress/e2e/features/*.feature'",
+    "full-regression-headless-edge": "cypress run --browser edge --spec 'cypress/e2e/features/*.feature'",
     "cypress:execution-tags": "cypress run --env tags=@mobile",
     "cypress:execution-allure": "cypress run --env allure=true",
     "allure:clear": "rm -r allure-results/ allure-report cypress/screenshots || true",
     "allure:report": "allure generate allure-results --clean -o allure-report",
-    "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true"
+    "allure:history": "mv -f allure-report/history allure-results/history && rm -r allure-report || true",
+    "merge-reports": "mochawesome-merge  ./cypress/reports/*.json >./reports1.json",
+    "generate-html-report": "merge report1.json --reportDir ./cypress/reports"
   },
   "keywords": [
     "cypress"
@@ -20,9 +25,17 @@
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "@shelex/cypress-allure-plugin": "^2.34.0",
+    "@shelex/cypress-allure-plugin": "^2.38.3",
     "cypress": "^12.0.2",
+    "cypress-xpath": "^2.0.1",
     "esbuild": "^0.16.4",
-    "multiple-cucumber-html-reporter": "^3.0.1"
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.3.0",
+    "mochawesome-report-generator": "^6.2.0",
+    "multiple-cucumber-html-reporter": "^3.3.0"
+  },
+  "dependencies": {
+    "@wdio/cli": "^8.8.8",
+    "webdriverio": "^8.8.8"
   }
 }
