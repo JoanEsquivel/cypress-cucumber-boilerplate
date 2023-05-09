@@ -1,7 +1,4 @@
 Feature: Instance Management - Orders Page
-
-    
-
     Background: User is logged Instance
     Given A User Navigate to the login page
     When A user enters the username "adoshetty@repay.com", the password "Admin@123", and clicks on the login button
