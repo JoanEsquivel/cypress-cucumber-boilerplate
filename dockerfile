@@ -6,9 +6,9 @@ RUN mkdir /cucumberproject
 WORKDIR /cucumberproject
 #Let's copy the essential files that we MUST use to run our scripts.
 COPY ./package.json .
-COPY ./jsconfig.json .
+COPY tsconfig.json .
 COPY ./.cypress-cucumber-preprocessorrc.json .
-COPY ./cypress.config.js .
+COPY cypress.config.ts .
 COPY ./cypress ./cypress
 #Install the cypress dependencies in the work directory
 RUN npm install

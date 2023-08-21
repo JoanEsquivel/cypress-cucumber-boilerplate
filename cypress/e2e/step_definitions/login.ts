@@ -15,6 +15,7 @@ When("A user enters the username {string}, the password {string}, and clicks on 
 });
 
 When("A user provides incorrect credentials, and clicks on the login button", (table) => {
+  // @ts-ignore
   table.hashes().forEach((row) => {
     cy.log(row.username);
     cy.log(row.password);
